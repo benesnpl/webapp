@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Azure Configuration</title>
+</head>
+<body>
+    <h1>Azure Configuration</h1>
+    <form method="post">
+        <label for="psk1">PSK for tunnel:</label>
+        <input type="text" name="psk1" id="psk1" required>
+        <br>
+
+        <label for="exip1">External IP of tunnel:</label>
+        <input type="text" name="exip1" id="exip1" required>
+        <br>
+
+        <label for="zone">Firewall Zone:</label>
+        <input type="text" name="zone" id="zone" required>
+        <br>
+
+        <label for="log1">Logical interface for tunnel 1 (just 200, not st0.200):</label>
+        <input type="text" name="log1" id="log1" required>
+        <br>
+
+        <label for="cidr">Route to add to VPN tunnel (e.g., 10.0.0.0/24):</label>
+        <input type="text" name="cidr" id="cidr" required>
+        <br>
+
+        <label for="name">Name for the VPN tunnel:</label>
+        <input type="text" name="name" id="name" required>
+        <br>
+
+        <input type="submit" value="Generate Configuration">
+    </form>
+</body>
+</html>
+
